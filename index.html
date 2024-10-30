@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visor de PDF</title>
+    <!-- Incluir PDF.js desde CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+    <style>
+        #pdf-canvas {
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        #pdf-controls {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pdf-controls">
+        <button id="prev-page">Anterior</button>
+        <button id="next-page">Siguiente</button>
+        <span>Página: <span id="page-num"></span> / <span id="page-count"></span></span>
+    </div>
+    <canvas id="pdf-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
